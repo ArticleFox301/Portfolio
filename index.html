@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nguyễn Trung Đức — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Nguyễn Trung Đức</h1>
+        <p class="muted">Cloud Developer • Final-year IT student</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="btn-outline">Contact</a>
+      </nav>
+      <button id="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="badge">TOEIC 900 • Cloud & Embedded</div>
+        <h2>Hi, I'm <span class="accent" id="typed-name"></span></h2>
+
+        <p class="lead">Final-year Information Technology student specializing in cloud computing & embedded systems. I build mobile apps, backend services, and 2D games.</p>
+        <div class="cta-row">
+          <a href="#projects" class="btn-primary">Xem dự án</a>
+          <a href="assets/Nguyen-Trung-Duc-CV-E.pdf" class="btn-ghost" download>Download CV</a>
+        </div>
+
+        <ul class="contact-inline">
+          <li>📞 <a href="tel:0329211103">0329211103</a></li>
+          <li>✉ <a href="mailto:duc21112003@gmail.com">duc21112003@gmail.com</a></li>
+          <li>📍 Ha Dong, Hanoi</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="card-profile">
+          <div class="profile-art">
+            <!-- colorful avatar placeholder -->
+            <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="g1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#ff7a7a"/>
+                  <stop offset="0.5" stop-color="#ffbf69"/>
+                  <stop offset="1" stop-color="#7afcff"/>
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" rx="20" fill="url(#g1)"></rect>
+            </svg>
+          </div>
+          <div class="profile-info">
+            <h3>Cloud Developer</h3>
+            <p>Linux • Java (Spring Boot) • C# • Android • Unity • Arduino</p>
+            <div class="skill-chips">
+              <span>Java</span><span>Android</span><span>Unity</span><span>Arduino</span><span>Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section container">
+      <h2 class="section-title">Career objective</h2>
+      <p>As a final-year Information Technology student, I aim to specialize in cloud computing and embedded systems. I seek to apply academic knowledge to real projects and grow technical skills to contribute to innovative technology solutions.</p>
+    </section>
+
+    <section id="skills" class="section alt container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Programming</h4>
+          <p>Java, C++, C#, JavaScript</p>
+        </div>
+        <div class="skill">
+          <h4>Frameworks & Tools</h4>
+          <p>Spring Boot, Unity, Raylib, CameraX, ML Kit</p>
+        </div>
+        <div class="skill">
+          <h4>Database & DevOps</h4>
+          <p>MySQL, MongoDB, Git, Docker (basic)</p>
+        </div>
+        <div class="skill">
+          <h4>Embedded & Systems</h4>
+          <p>Arduino, Linux, Bash, Virtualization</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>QR Code Scanning App</h3>
+            <span class="project-meta">Mobile Developer • 04/2025 – 06/2025</span>
+          </div>
+          <p>Java Android app using CameraX, ML Kit and ZXing. Scan from camera or gallery, generate QR codes and store history with Room DB.</p>
+          <div class="project-footer">
+            <a href="https://github.com/GingBaoNo/qrapp" target="_blank" rel="noopener">View on GitHub</a>
+            <span class="tech">Java • CameraX • ML Kit • Room</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>JavaMail App</h3>
+            <span class="project-meta">Java Developer • 08/2024 – 09/2024</span>
+          </div>
+          <p>Personal Java project to send and receive emails. Supports viewing, sending, replying.</p>
+          <div class="project-footer">
+            <a href="#" class="disabled">Repository</a>
+            <span class="tech">Java • IMAP/SMTP</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Basic Tetris Game</h3>
+            <span class="project-meta">Game Developer • 06/2025 – 07/2025</span>
+          </div>
+          <p>Tetris built with C++ and Raylib. Implemented random blocks, rotation, collisions, scoring and sounds.</p>
+          <div class="project-footer">
+            <a href="https://github.com/ArticleFox301/Tetris-Cpp" target="_blank" rel="noopener">View on GitHub</a>
+            <span class="tech">C++ • Raylib</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>2D Tower Defense</h3>
+            <span class="project-meta">Game Developer • 04/2025 – 06/2025</span>
+          </div>
+          <p>2D TD game in Unity with tower upgrade/sell mechanics, multiple enemy types and achievements.</p>
+          <div class="project-footer">
+            <a href="#" class="disabled">Repository</a>
+            <span class="tech">Unity • C#</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section alt container">
+      <h2 class="section-title">Education & Certificates</h2>
+      <div class="education-grid">
+        <div>
+          <h4>Hanoi Architectural University</h4>
+          <p>Information Technology (2021 – 2026) — GPA: 2.89</p>
+        </div>
+        <div>
+          <h4>Certificate</h4>
+          <p>TOEIC — Score 900 (08/2025)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Contact</h3>
+        <p>Phone: <a href="tel:0329211103">0329211103</a><br>Email: <a href="mailto:duc21112003@gmail.com">duc21112003@gmail.com</a><br>Location: Ha Dong, Hanoi</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="assets/Nguyen-Trung-Duc-CV-E.pdf" download>Download CV</a></li>
+        </ul>
+      </div>
+
+      <div class="social">
+        <h3>Social</h3>
+        <p><a href="https://github.com/ArticleFox301" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="year"></span> Nguyễn Trung Đức — Designed with ♥
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
